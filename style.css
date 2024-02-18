@@ -1,0 +1,809 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+
+/*for desktop */
+
+@media screen and (min-width: 1201px) {
+	.container{
+		height:100%;
+		width:100%;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		 font-family: "Plus Jakarta Sans", sans-serif;
+		 background-color:#ced5e0;
+	}
+	
+	.box{
+		height:80%;
+		width:50%;
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+		align-items:center;
+		border-radius:5px;
+		background-color:white;
+	}
+
+	
+/* header part */	
+	.header{
+		height:10%;
+		width:90%;
+		display:flex;
+		align-items:center;
+	}
+		
+	#bold{
+		font-weight:bolder;
+		font-size:20px;
+		display:inline-block;
+	}
+	.notice{
+height:50px;
+width:200px;
+display:flex;
+align-items:center;	
+	}
+	header{
+		height:70%;
+		width:100%;
+		display:flex;
+		justify-content:space-between;
+		align-items:center;
+	}
+	.notification-box{
+		display:flex;
+		justify-content:center;
+		height:20px;
+		width:20px;
+		background-color:#3042e6;
+		border-radius:5px;
+		color:white;
+		margin-left:10px;
+	}
+	
+	button{
+		outline:none;
+		border:none;
+		color:grey;
+		font-size:16px;
+		height:40px;
+		background-color:white;
+		cursor:pointer;
+	
+		
+	}
+	
+	
+	
+/*content part*/	
+	.content{
+		height:90%;
+		width:90%;
+		display:flex;
+		flex-direction:column;
+		justify-content:space-between;
+	}
+	
+	.notifications{
+		height:50px;
+		width:100%;
+		border-radius:5px;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		cursor:pointer;
+		
+	}
+	
+.notifications1 {
+    height: auto; /* Change height to auto */
+    min-height: 80px; /* Add minimum height */
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column; /* Change to column layout */
+    justify-content: center;
+    align-items: flex-start; /* Align items to start */
+    background-color: #f0f2fc;
+    cursor: pointer;
+    padding: 10px; /* Add padding for spacing */
+    box-sizing: border-box; /* Ensure padding is included in the height */
+    margin-bottom: 10px; /* Add some margin for spacing between notifications */
+}
+.hide-notifications1{
+	background-color:white;
+}
+
+	.sub{
+		height:85%;
+		width:97%;
+		display:flex;
+		align-items:center;
+	flex-wrap:wrap;
+	}
+	
+	.image{
+		height:40px;
+		width:40px;
+		background-color:#f0f2fc;
+	}
+/* first noti */	
+	.text{
+		height:auto;
+		width:auto;
+		display:flex;
+		justify-content:space-evenly;
+		font-size:14px;
+		align-items:center;
+		flex-wrap:wrap;
+		flex-direction:column;
+	}
+	
+		.first{
+		height:auto;
+		width:100%;
+		display:flex;
+		
+	}
+	
+	
+	.name{
+		font-weight:bold;
+		margin-left:10px;
+		
+	}
+	.reaction{
+		color:grey;
+		margin-left:5px;
+	}
+	.comm{
+		color:#6a6a6b;
+		margin-left:5px;
+		font-weight:bolder;
+	}
+	.comm1{
+		color:#6a6a6b;
+		margin-left:10px;
+		margin-right:auto;
+		font-weight:bolder;
+	}
+	.dot{
+		height:10px;
+		width:10px;
+		border-radius:50%;
+		background-color:#d65c66;
+		margin-left:5px;
+		align-self:center;
+		visibility:visible
+	}
+	
+	.hide-dot{
+		visibility:hidden;
+	}
+	
+
+	.time{
+		color:grey;
+		font-size:12px;
+		margin-right:auto;
+		margin-left:10px;
+	
+	}
+	/*chess club */
+.chess{
+		color:#363b9e;
+		margin-left:5px;
+		font-weight:bolder;
+	}
+	/* mssg */
+		.sub1{
+		height:85%;
+		width:97%;
+		display:flex;
+		align-items:center;
+	flex-wrap:wrap;
+	text-align:justify;
+	}
+	
+	.mssg{
+		height:90px;
+		width:500px;
+		border-radius:3px;
+		border:1px solid grey;
+		font-size:16px;
+		color:grey;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		margin-left:40px;
+		margin-top:5px;
+		display:none;
+		
+	}
+	.show-mssg{
+			display:flex;
+		justify-content:center;
+		align-items:center;
+	}
+	
+	/* chess img*/
+	.chess-img{
+		height:40px;
+		width:40px;
+		margin-left:auto;
+		align-self:center;
+	}
+	
+	/*fourth mssg box*/
+	.sub1{
+		height:auto;
+		
+	}
+}
+
+
+
+/*for mobile */
+
+
+
+
+@media screen and (max-width: 600px) {
+    /* Container styles */
+    .container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        background-color: #ced5e0;
+    }
+
+    /* Box styles */
+    .box {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        background-color: white;
+    }
+
+    /* Header styles */
+    .header {
+        height: 10%;
+        width: 90%;
+        display: flex;
+        align-items: center;
+    }
+
+    /* Notification box styles */
+    .notice {
+        height: 50px;
+        width: 200px;
+        display: flex;
+        align-items: center;
+    }
+
+    /* Header section styles */
+    header {
+        height: 70%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Notification box styles */
+    .notification-box {
+        display: flex;
+        justify-content: center;
+        height: 20px;
+        width: 20px;
+        background-color: #3042e6;
+        border-radius: 5px;
+        color: white;
+        margin-left: 10px;
+    }
+
+    /* Button styles */
+    button {
+        outline: none;
+        border: none;
+        color: grey;
+        font-size: 16px;
+        height: 40px;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    /* Content styles */
+    .content {
+        height: 95%;
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    /* Notification styles */
+    .notifications {
+        height: auto;
+        width: 100%;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    /* Notification1 styles */
+.notifications1 {
+    height: auto; /* Change height to auto */
+    min-height: 80px; /* Add minimum height */
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column; /* Change to column layout */
+    justify-content: center;
+    align-items: flex-start; /* Align items to start */
+    background-color: #f0f2fc;
+    cursor: pointer;
+    padding: 10px; /* Add padding for spacing */
+    box-sizing: border-box; /* Ensure padding is included in the height */
+    margin-bottom: 10px; /* Add some margin for spacing between notifications */
+}
+
+    /* Sub styles */
+    .sub {
+        height: 85%;
+        width: 97%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    /* Image styles */
+    .image {
+        height: 30px;
+        width: 30px;
+        background-color: #f0f2fc;
+    }
+
+    /* Text styles */
+    .text {
+        height: auto;
+        width: auto;
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 13px;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+	
+	    .text1 {
+        height: auto;
+        width: auto;
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 13px;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+		border:1px solid black;
+    }
+
+    /* Name styles */
+    .name {
+        font-weight: bold;
+        margin-left: 10px;
+        font-size: 14px;
+        display: inline-block;
+    }
+
+    /* Reaction styles */
+    .reaction {
+        color: grey;
+        margin-left: 5px;
+        font-size: 14px;
+        display: inline-block;
+    }
+
+    /* Comm styles */
+    .comm {
+        color: #6a6a6b;
+        margin-left: 5px;
+        font-weight: bolder;
+        font-size: 14px;
+        display: inline-block;
+    }
+
+    /* Comm1 styles */
+    .comm1 {
+        color: #6a6a6b;
+        margin-left: 10px;
+        margin-right: auto;
+        font-weight: bolder;
+        font-size: 14px;
+        display: inline-block;
+    }
+
+    /* Dot styles */
+    .dot {
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        background-color: #d65c66;
+        align-self: center;
+        display: flex;
+		display:inline-block;
+		margin-left:5px;
+    }
+
+    /* Hide dot styles */
+    .hide-dot {
+        visibility: hidden;
+    }
+
+    /* Hide notification1 styles */
+    .hide-notifications1 {
+        background-color: white;
+    }
+
+    /* Time styles */
+    .time {
+        color: grey;
+        font-size: 12px;
+        margin-right: auto;
+        margin-left: 10px;
+    }
+
+    /* Chess styles */
+    .chess {
+        color: #363b9e;
+        margin-left: 5px;
+        font-weight: bolder;
+		display:inline-block;
+    }
+
+    /* Message styles */
+    .mssg {
+        height: 90px;
+        width: 500px;
+        border-radius: 3px;
+        border: 1px solid grey;
+        font-size: 12px;
+        color: grey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 40px;
+        margin-top: 5px;
+        display: none;
+    }
+
+    /* Show message styles */
+    .show-mssg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Chess image styles */
+    .chess-img {
+        height: 40px;
+        width: 40px;
+        margin-left: auto;
+        align-self: center;
+    }
+
+ .sub1 {
+        width: 100%; /* Set the width to 100% for full-width display */
+        display: flex;
+        flex-direction: column; /* Display children in a column layout */
+        align-items: flex-start; /* Align children to the start of the container */
+    }
+
+    .sub1 .text {
+        margin-left: 20px; /* Adjust margin as needed */
+    }
+
+    .sub1 .mssg {
+        margin-left: 20px; /* Adjust margin as needed */
+        width: calc(100% - 40px); /* Adjust width to accommodate margin */
+    }
+
+    .sub1 .mssg p {
+        margin: 5px 0; /* Adjust margins for paragraph elements within the message */
+    }
+
+    .sub1 .time {
+        margin-left: auto; /* Push the time element to the right */
+        margin-right: 20px; /* Adjust margin as needed */
+    }
+}
+
+
+
+
+
+/*mid width devices*/
+
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+    /* Container styles */
+    .container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        background-color: #ced5e0;
+    }
+
+    /* Box styles */
+    .box {
+        height: 85%;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        background-color: white;
+    }
+
+    /* Header styles */
+    .header {
+        height: 10%;
+        width: 90%;
+        display: flex;
+        align-items: center;
+    }
+
+    /* Notification box styles */
+    .notice {
+        height: 50px;
+        width: 200px;
+        display: flex;
+        align-items: center;
+    }
+
+    /* Header section styles */
+    header {
+        height: 70%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Notification box styles */
+    .notification-box {
+        display: flex;
+        justify-content: center;
+        height: 20px;
+        width: 20px;
+        background-color: #3042e6;
+        border-radius: 5px;
+        color: white;
+        margin-left: 10px;
+    }
+
+    /* Button styles */
+    button {
+        outline: none;
+        border: none;
+        color: grey;
+        font-size: 16px;
+        height: 40px;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    /* Content styles */
+    .content {
+        height: 95%;
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    /* Notification styles */
+    .notifications {
+        height: auto;
+        width: 100%;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    /* Notification1 styles */
+/* Adjust the .notifications1 styles */
+.notifications1 {
+    height: auto; /* Change height to auto */
+    min-height: 80px; /* Add minimum height */
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column; /* Change to column layout */
+    justify-content: center;
+    align-items: flex-start; /* Align items to start */
+    background-color: #f0f2fc;
+    cursor: pointer;
+    padding: 10px; /* Add padding for spacing */
+    box-sizing: border-box; /* Ensure padding is included in the height */
+    margin-bottom: 10px; /* Add some margin for spacing between notifications */
+}
+
+
+    /* Sub styles */
+    .sub {
+        height: 85%;
+        width: 97%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    /* Image styles */
+    .image {
+        height: 30px;
+        width: 30px;
+        background-color: #f0f2fc;
+    }
+
+    /* Text styles */
+    .text {
+        height: auto;
+        width: auto;
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 13px;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    /* Name styles */
+    .name {
+        font-weight: bold;
+        margin-left: 10px;
+        font-size: 14px;
+        display: inline-block;
+    }
+
+    /* Reaction styles */
+    .reaction {
+        color: grey;
+        margin-left: 5px;
+        font-size: 14px;
+        display: inline-block;
+    }
+
+    /* Comm styles */
+    .comm {
+        color: #6a6a6b;
+        margin-left: 5px;
+        font-weight: bolder;
+        font-size: 14px;
+        display: inline-block;
+    }
+
+    /* Comm1 styles */
+    .comm1 {
+        color: #6a6a6b;
+        margin-left: 10px;
+        margin-right: auto;
+        font-weight: bolder;
+        font-size: 14px;
+        display: inline-block;
+    }
+
+    /* Dot styles */
+    .dot {
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        background-color: #d65c66;
+        align-self: center;
+        display: flex;
+		display:inline-block;
+		margin-left:5px;
+    }
+
+    /* Hide dot styles */
+    .hide-dot {
+        visibility: hidden;
+    }
+
+    /* Hide notification1 styles */
+    .hide-notifications1 {
+        background-color: white;
+    }
+
+    /* Time styles */
+    .time {
+        color: grey;
+        font-size: 12px;
+        margin-right: auto;
+        margin-left: 10px;
+    }
+
+    /* Chess styles */
+    .chess {
+        color: #363b9e;
+        margin-left: 5px;
+        font-weight: bolder;
+		display:inline;
+    }
+
+    /* Message styles */
+    .mssg {
+        height: 90px;
+        width: 500px;
+        border-radius: 3px;
+        border: 1px solid grey;
+        font-size: 14px;
+        color: grey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 40px;
+        margin-top: 5px;
+        display: none;
+    }
+
+    /* Show message styles */
+    .show-mssg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Chess image styles */
+    .chess-img {
+        height: 40px;
+        width: 40px;
+        margin-left: auto;
+        align-self: center;
+    }
+
+  		.sub1{
+		height:85%;
+		width:97%;
+		display:flex;
+		align-items:center;
+	flex-wrap:wrap;
+	text-align:justify;
+	
+	}
+	
+    .sub1 .image {
+        margin-right: 10px; /* Add margin for spacing between image and text */
+    }
+
+    .sub1 .text {
+        display: flex;
+        flex-direction: column; /* Stack text elements vertically */
+        justify-content: center; /* Vertically center the text */
+    }
+
+  
+
+
+}
+
+
+
